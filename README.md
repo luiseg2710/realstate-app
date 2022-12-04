@@ -1,2 +1,2 @@
 # realstate-app
- realstate app with next js
+Realstate App with React, Next.js & Chakra.
