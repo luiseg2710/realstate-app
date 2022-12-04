@@ -9,7 +9,7 @@ const Banner = ({ purpose, title1, title2, desc1, desc2, buttonText, linkName, i
       <Text color="gray.500" fontSize="sm" fontWeight="medium">{purpose}</Text>
       <Text fontSize="3xl" fontWeight="bold">{title1}<br />{title2}</Text>
       <Text fontSize="lg" paddingTop="3" paddingBottom="3" color="gray.700">{desc1}<br />{desc2}</Text>
-      <Button fontSize="xl" bg="blue.300" color="white">
+      <Button fontSize="xl">
         <Link href={linkName}>{buttonText}</Link>
       </Button>
     </Box>
@@ -20,8 +20,28 @@ export default function Home() {
   return (
     <div>
       <h1>Hello World</h1>
-      <Banner purpose='For Sale'/>
-      <Banner purpose='For Rent'/>
+      <Banner
+        purpose='RENT A HOME'
+        title1="Rental Homes For"
+        title2="Everyone"
+        desc1="Explore Apartments, Villas, Homes"
+        desc2="and more"
+        buttonText="Explore Renting"
+        linkName="/search?purpose=for-rent"
+        imageUrl="https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      
+      />
+      <Banner
+        purpose='BUY A HOME'
+        title1="Find, Buy & Own Your"
+        title2="Dream Home"
+        desc1="Explore Apartments, Villas, Homes"
+        desc2="and more"
+        buttonText="Explore Buying"
+        linkName="/search?purpose=for-sale"
+        imageUrl="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      
+      />
     </div>
   )
 }
