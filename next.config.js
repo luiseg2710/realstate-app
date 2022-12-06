@@ -2,7 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['images.pexels.com']
+    protocol: 'https',
+    hostname: 'images.pexels.com',
+    port: 'http://localhost:3000/',
+    pathname: '../assets/images/condo.jpg'
   }
 }
 
