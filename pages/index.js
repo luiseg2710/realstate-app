@@ -34,7 +34,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
         linkName="/search?purpose=for-rent"
         imageUrl='https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
       />
-      <Flex flexwrap="wrap">
+      <Flex flexWrap="wrap">
         {propertiesForRent.map((property) => <Property property={property} key={property.id} />)}
       </Flex>
       <Banner
